@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Darshana Khedkar — Java Backend Developer</title>
+  <meta name="description" content="Java Backend Developer skilled in Spring Boot, REST APIs, SQL, Docker, and AWS. RHCSA & DO188 certified. Pune, India." />
+  <meta property="og:title" content="Darshana Khedkar — Portfolio" />
+  <meta property="og:description" content="Java Backend Developer • Spring Boot • REST APIs • SQL • Docker • AWS" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #0b1020; /* deep navy */
+      --card: #0f172a; /* slate-900 */
+      --muted: #94a3b8; /* slate-400 */
+      --text: #e2e8f0; /* slate-200 */
+      --brand: #22d3ee; /* cyan-400 */
+      --accent: #a78bfa; /* violet-400 */
+      --ring: #22d3ee55;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0}
+    body{font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; background:radial-gradient(1200px 800px at 100% -10%, #1e293b 0%, #0b1020 60%), var(--bg); color:var(--text); line-height:1.6}
+    a{color:var(--brand); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1060px; margin:0 auto; padding:24px}
+    header{position:sticky; top:0; backdrop-filter:saturate(180%) blur(10px); background:#0b1020cc; border-bottom:1px solid #1f2937; z-index:50}
+    nav{display:flex; align-items:center; justify-content:space-between; gap:16px}
+    .brand{display:flex; align-items:center; gap:12px}
+    .logo{width:36px; height:36px; border-radius:10px; background:linear-gradient(135deg, var(--brand), var(--accent)); box-shadow:0 8px 24px #000a}
+    .name{font-weight:700; letter-spacing:.3px}
+    .role{font-size:.9rem; color:var(--muted)}
+    .links{display:flex; gap:16px; align-items:center}
+    .btn{display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border:1px solid #334155; border-radius:12px; background:#0f172a; color:var(--text); box-shadow:0 8px 24px #0006; transition:transform .1s ease}
+    .btn:hover{transform:translateY(-1px)}
+    .ghost{background:transparent}
+
+    .hero{display:grid; grid-template-columns:1.2fr .8fr; gap:32px; padding:40px 0}
+    .hero h1{font-size:clamp(28px, 3.6vw, 46px); line-height:1.15; margin:.1em 0 .3em; letter-spacing:.2px}
+    .hero p{color:var(--muted); font-size:1.05rem}
+    .hero .card{background:linear-gradient(180deg, #0f172a, #0b1020); border:1px solid #1f2937; padding:20px; border-radius:16px}
+    .badges{display:flex; flex-wrap:wrap; gap:10px; margin-top:16px}
+    .badge{padding:8px 12px; border:1px solid #334155; border-radius:999px; font-size:.9rem; color:#cbd5e1}
+
+    section{margin:48px 0}
+    .section-title{font-size:1.4rem; margin-bottom:16px; display:flex; align-items:center; gap:10px}
+    .grid{display:grid; gap:16px}
+    .grid.cards{grid-template-columns:repeat(auto-fill, minmax(260px, 1fr))}
+    .card{background:#0f172a; border:1px solid #1f2937; padding:18px; border-radius:16px}
+    .muted{color:var(--muted)}
+    .kicker{color:var(--brand); font-weight:600; letter-spacing:.4px; text-transform:uppercase; font-size:.8rem}
+    .pill{display:inline-block; padding:6px 10px; border:1px solid #334155; border-radius:999px; font-size:.8rem; color:#cbd5e1; margin:6px 6px 0 0}
+    .edu{display:flex; justify-content:space-between; gap:12px}
+
+    .footer{margin:48px 0 24px; font-size:.95rem; color:#94a3b8}
+    .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:16px}
+    input, textarea{width:100%; padding:12px 14px; border-radius:12px; border:1px solid #334155; background:#0b1020; color:#e2e8f0; outline:none}
+    input:focus, textarea:focus{box-shadow:0 0 0 6px var(--ring); border-color:var(--brand)}
+    textarea{min-height:120px}
+    .submit{cursor:pointer; background:linear-gradient(135deg, var(--brand), var(--accent)); border:none; color:#0b1020; font-weight:700}
+
+    @media (max-width: 860px){
+      .hero{grid-template-columns:1fr}
+      .links{display:none}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <div class="name">Darshana Khedkar</div>
+          <div class="role">Java Backend Developer</div>
+        </div>
+      </div>
+      <div class="links">
+        <a class="btn ghost" href="#projects">Projects</a>
+        <a class="btn ghost" href="#experience">Experience</a>
+        <a class="btn ghost" href="#skills">Skills</a>
+        <a class="btn" href="mailto:khedkar440@gmail.com">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <div>
+      <span class="kicker">Hello! 👋</span>
+      <h1>Building reliable backends with <span style="background:linear-gradient(135deg, var(--brand), var(--accent)); -webkit-background-clip:text; background-clip:text; color:transparent">Java, Spring Boot & SQL</span></h1>
+      <p>
+        I’m a dedicated Java Backend Developer focused on designing RESTful APIs, database modeling, and secure, containerized deployments. I enjoy turning business needs into scalable services and clean, well-tested code.
+      </p>
+      <div class="badges" aria-label="Key skills">
+        <span class="badge">Java (JDK 8+)</span>
+        <span class="badge">Spring Boot</span>
+        <span class="badge">Hibernate/JPA</span>
+        <span class="badge">REST APIs</span>
+        <span class="badge">MySQL & PostgreSQL</span>
+        <span class="badge">Docker</span>
+        <span class="badge">AWS</span>
+      </div>
+      <div style="margin-top:18px; display:flex; gap:10px; flex-wrap:wrap">
+        <a class="btn" href="https://github.com/Darshana-Khedkar" target="_blank" rel="noreferrer">GitHub Profile</a>
+        <a class="btn ghost" href="#contact">Hire Me</a>
+      </div>
+    </div>
+    <div class="card" role="region" aria-label="Quick facts">
+      <div class="section-title">Quick Facts</div>
+      <ul class="muted" style="margin:0; padding-left:18px">
+        <li>Pune, India</li>
+        <li><a href="mailto:khedkar440@gmail.com">khedkar440@gmail.com</a> · <a href="tel:+918799971007">+91 87999 71007</a></li>
+        <li>RHCSA & DO188 (Container Specialist)</li>
+        <li>Passionate about backend engineering, secure coding & performance</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-title">Projects</div>
+    <div class="grid cards">
+      <article class="card">
+        <div class="kicker">Spring Boot · MySQL</div>
+        <h3>College Placement Portal</h3>
+        <p class="muted">Full‑stack portal with authentication, skill mapping, job listings, and admin modules. Backend built with Spring Boot, integrated with MySQL.</p>
+        <div>
+          <span class="pill">Java</span>
+          <span class="pill">Spring Boot</span>
+          <span class="pill">MySQL</span>
+          <span class="pill">REST APIs</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Android · Python</div>
+        <h3>Health On Tips — Healthcare App</h3>
+        <p class="muted">Android application combined with Python analytics for personal health tracking and insights.</p>
+        <div>
+          <span class="pill">Android</span>
+          <span class="pill">Python</span>
+          <span class="pill">Analytics</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="kicker">JSP · MySQL</div>
+        <h3>Plant Nursery — E‑commerce</h3>
+        <p class="muted">Backend logic for product catalog, authentication, cart/wishlist, and order tracking features.</p>
+        <div>
+          <span class="pill">Java</span>
+          <span class="pill">JSP</span>
+          <span class="pill">MySQL</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Java · SQL</div>
+        <h3>Grocery Store Application</h3>
+        <p class="muted">Inventory system to add/list/delete products with stock management and performant SQL queries.</p>
+        <div>
+          <span class="pill">Java</span>
+          <span class="pill">JDBC</span>
+          <span class="pill">SQL</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="section-title">Experience</div>
+    <div class="card">
+      <div class="kicker">Internship</div>
+      <h3>Web Developer — Cognifront</h3>
+      <p class="muted">Built an Online Table Booking System for restaurants using HTML, CSS, JavaScript, Bootstrap, Java, Spring, and PostgreSQL. Solved complex issues and implemented solutions aligned with requirements.</p>
+      <div>
+        <span class="pill">Spring</span>
+        <span class="pill">PostgreSQL</span>
+        <span class="pill">JavaScript</span>
+        <span class="pill">Bootstrap</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-title">Skills</div>
+    <div class="grid cards">
+      <div class="card">
+        <h4>Core</h4>
+        <p class="muted">Java (JDK 8+), Spring Boot, Hibernate/JPA, RESTful APIs, SQL, Microservices</p>
+      </div>
+      <div class="card">
+        <h4>Databases</h4>
+        <p class="muted">MySQL, PostgreSQL</p>
+      </div>
+      <div class="card">
+        <h4>DevOps & Cloud</h4>
+        <p class="muted">Docker/Containers, CI/CD, AWS, Kubernetes (basics)</p>
+      </div>
+      <div class="card">
+        <h4>Web</h4>
+        <p class="muted">HTML, CSS, JavaScript, Bootstrap, JSP</p>
+      </div>
+      <div class="card">
+        <h4>Other</h4>
+        <p class="muted">Git, Python, PHP, Django (basics)</p>
+      </div>
+      <div class="card">
+        <h4>Soft Skills</h4>
+        <p class="muted">Problem Solving, Communication, Time Management, Teamwork, Project Management</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="section-title">Education</div>
+    <div class="grid">
+      <div class="card edu">
+        <div>
+          <div class="kicker">2020 – 2024</div>
+          <h3>Bachelor of Technology</h3>
+          <p class="muted">G.S. Mandal’s Marathwada Institute of Technology</p>
+        </div>
+      </div>
+      <div class="card edu">
+        <div>
+          <div class="kicker">2019 – 2020</div>
+          <h3>HSC</h3>
+          <p class="muted">Acharya G.R. Garud Madhyamik Vidyalaya & Jr. College, Shendurni</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certs">
+    <div class="section-title">Certificates</div>
+    <div class="grid cards">
+      <div class="card">
+        <h4>RHCSA — Red Hat Certified System Administrator</h4>
+        <p class="muted">Certification ID: 230-199-168</p>
+      </div>
+      <div class="card">
+        <h4>DO188 — Red Hat Certified Specialist in Containers</h4>
+        <p class="muted">Certification ID: 230-199-168</p>
+      </div>
+      <div class="card">
+        <h4>Full Stack Web Development</h4>
+        <p class="muted">Plus: Database Design (Oracle Academy), Python Programming, Java Foundation (Oracle Academy)</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-title">Contact</div>
+    <div class="grid">
+      <form class="card" onsubmit="sendEmail(event)">
+        <div class="contact-grid">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" required placeholder="Your name" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com" />
+          </div>
+        </div>
+        <div style="margin-top:12px">
+          <label for="msg">Message</label>
+          <textarea id="msg" name="msg" required placeholder="What would you like to build?"></textarea>
+        </div>
+        <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap">
+          <button class="btn submit" type="submit">Send Message</button>
+          <a class="btn ghost" href="mailto:khedkar440@gmail.com">Email Directly</a>
+        </div>
+        <p class="muted" style="margin-top:10px">You can also reach me at <a href="tel:+918799971007">+91 87999 71007</a>.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div>© <span id="year"></span> Darshana Khedkar · <a href="https://github.com/Darshana-Khedkar" target="_blank" rel="noreferrer">GitHub</a></div>
+  </footer>
+</main>
+
+<script>
+  function sendEmail(e){
+    e.preventDefault();
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const msg = document.getElementById('msg').value.trim();
+    const subject = encodeURIComponent('Portfolio Inquiry from ' + name);
+    const body = encodeURIComponent(msg + '\n\nFrom: ' + name + ' (' + email + ')');
+    window.location.href = `mailto:khedkar440@gmail.com?subject=${subject}&body=${body}`;
+  }
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
