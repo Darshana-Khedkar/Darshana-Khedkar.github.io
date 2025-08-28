@@ -174,49 +174,55 @@
   </section>
 
   <section id="experience">
-    <div class="section-title">Experience</div>
-    <div class="card">
-      <div class="kicker">Internship</div>
-      <h3>Web Developer — Cognifront</h3>
-      <p class="muted">Built an Online Table Booking System for restaurants using HTML, CSS, JavaScript, Bootstrap, Java, Spring, and PostgreSQL. Solved complex issues and implemented solutions aligned with requirements.</p>
-      <div>
-        <span class="pill">Spring</span>
-        <span class="pill">PostgreSQL</span>
-        <span class="pill">JavaScript</span>
-        <span class="pill">Bootstrap</span>
-      </div>
-    </div>
-  </section>
+  <div class="section-title">
+    Experience 
+    <span id="total-exp" style="font-size:0.9rem; color:var(--muted); margin-left:8px"></span>
+  </div>
 
-  <section id="skills">
-    <div class="section-title">Skills</div>
-    <div class="grid cards">
-      <div class="card">
-        <h4>Core</h4>
-        <p class="muted">Java (JDK 8+), Spring Boot, Hibernate/JPA, RESTful APIs, SQL, Microservices</p>
-      </div>
-      <div class="card">
-        <h4>Databases</h4>
-        <p class="muted">MySQL, PostgreSQL</p>
-      </div>
-      <div class="card">
-        <h4>DevOps & Cloud</h4>
-        <p class="muted">Docker/Containers, CI/CD, AWS, Kubernetes (basics)</p>
-      </div>
-      <div class="card">
-        <h4>Web</h4>
-        <p class="muted">HTML, CSS, JavaScript, Bootstrap, JSP</p>
-      </div>
-      <div class="card">
-        <h4>Other</h4>
-        <p class="muted">Git, Python, PHP, Django (basics)</p>
-      </div>
-      <div class="card">
-        <h4>Soft Skills</h4>
-        <p class="muted">Problem Solving, Communication, Time Management, Teamwork, Project Management</p>
-      </div>
+  <!-- Current Job -->
+  <div class="card">
+    <div class="kicker">April 2025 – Present</div>
+    <h3>Java Developer — MaxxZoom</h3>
+    <p class="muted">
+      • Developed and contributed to multiple web projects using HTML, CSS, and JavaScript to create responsive and user-friendly interfaces.<br>
+      • Hands-on with Spring Boot, Spring Framework (Core, MVC), Servlets, JSP, and Hibernate for building full-stack Java web applications.<br>
+      • Worked with Maven for project management and build automation.<br>
+      • Implemented backend functionality using JDBC and RESTful APIs, ensuring smooth integration and performance.<br>
+      • Created and tested APIs using Postman to validate request/response cycles.<br>
+      • Worked with PostgreSQL and H2 Database for development and testing.
+    </p>
+    <div>
+      <span class="pill">Java</span>
+      <span class="pill">Spring Boot</span>
+      <span class="pill">Hibernate</span>
+      <span class="pill">REST APIs</span>
+      <span class="pill">PostgreSQL</span>
+      <span class="pill">Maven</span>
     </div>
-  </section>
+  </div>
+
+  <hr style="border: 0; border-top: 1px solid #1f2937; margin: 24px 0;">
+
+  <!-- Internship -->
+  <div class="card">
+    <div class="kicker">Internship</div>
+    <h3>Web Developer — Cognifront</h3>
+    <p class="muted">
+      • Developed an Online Table Booking System for restaurants using HTML, CSS, JavaScript, Bootstrap, PHP, and MySQL.<br>
+      • Solved complex issues and implemented innovative solutions aligned with project requirements.<br>
+      • Enhanced skills in web development, database management, and project management through workshops and online courses.
+    </p>
+    <div>
+      <span class="pill">Spring</span>
+      <span class="pill">PostgreSQL</span>
+      <span class="pill">JavaScript</span>
+      <span class="pill">Bootstrap</span>
+      <span class="pill">PHP</span>
+      <span class="pill">MySQL</span>
+    </div>
+  </div>
+</section>
+
 
   <section id="education">
     <div class="section-title">Education</div>
@@ -300,5 +306,30 @@
   }
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
+
+<script>
+  function calculateExperience(startDateStr) {
+    const startDate = new Date(startDateStr);
+    const today = new Date();
+
+    let years = today.getFullYear() - startDate.getFullYear();
+    let months = today.getMonth() - startDate.getMonth();
+
+    if (months < 0) {
+      years--;
+      months += 12;
+    }
+
+    return { years, months };
+  }
+
+  // 👉 Change start date = your joining date (11 April 2025)
+  const exp = calculateExperience("2025-04-11");
+  const totalExp = `${exp.years > 0 ? exp.years + " yr " : ""}${exp.months} mo`;
+  
+  document.getElementById("total-exp").textContent = `${totalExp}`;
+</script>
+  
+  
 </body>
 </html>
